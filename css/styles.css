@@ -24,15 +24,19 @@ h3 {
 body, html {
 	height: 100%;
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	color: #777;
 } 
+
+/* Header */
 
 header {
 	background-color:#FFFFFF;
 	margin:0;
+	opacity:0.90;
 	position:fixed;
 	width:100%;
+	z-index:1;
 }
 
 .logo {
@@ -40,22 +44,58 @@ header {
 	width:50%;
 }
 
-img {
-	padding:2em;
+.logo img {
+	padding:2em 0 2em 8em;
 	width:10em;
 }
+
+nav {
+	float:left;
+	text-transform:uppercase;
+	width:30%;
+}
+
+nav a:hover {
+	border-top:3px solid #097845;
+	padding-top:1em;
+}
+	
 
 nav ul li{
 	display:inline;
 	list-style:none;
 }
 
-nav ul {
-	margin:0;
-	padding-top:2em;
+nav li {
+	padding-right:1em;
 }
 
-.bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5, {
+nav ul {
+	margin:0;
+	padding-top:3em;
+}
+
+
+a:link {
+    color: #777;
+    text-decoration:none;
+}
+
+a:visited {
+    color: #777;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+/* Background images */
+
+.bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -64,28 +104,107 @@ nav ul {
   background-size: cover; 
 
 }
+
 .bgimg1 {
   background-image: url("../img/img1a.jpg");
-  min-height: 400px;
+  min-height: 700px;
+  padding-top:3em;
 }
 
 .bgimg2 {
   background-image: url("../img/img1.jpg");
-  min-height: 400px;
+  min-height: 700px;
 }
 
 .bgimg3 {
   background-image: url("../img/img2.jpg");
-  min-height: 400px;
+  min-height: 700px;
 }
 
 .bgimg4 {
   background-image: url("../img/img3.jpg");
-  min-height: 400px;
+  min-height: 700px;
 }
 
 .bgimg5 {
   background-image: url("../img/img1a.jpg");
-  min-height: 700px;
+  min-height: 300px;
 }
+
+/* Content */
+
+.about h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.about {
+	padding:1em 4em 1em 4em;
+	height:350px;
+	width:100%;
+	
+}
+
+.half {
+	float:left;
+	padding:1em 4em 1em 4em;
+	width:40%;
+}
+
+.choices h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.choices {
+	height:380px;
+	padding:1em 4em 1em 4em;
+}
+
+.third {
+	float:left;
+	padding:1em 4em 4em 4em;
+	width:25%;
+}
+
+.third img {
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.aboutagain h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.aboutagain {
+	height:350px;
+	padding:1em 4em 1em 4em;
+}
+
+.contact h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.contact {
+	height:350px;
+	padding:1em 4em 1em 4em;
+}
+
+.half h4 {
+	text-align:center;
+}
+
+.contact .half ul li {
+	list-style:none;
+	text-align:center;
+	
+}
+
+footer {
+	text-align:center;
+}
+
 
