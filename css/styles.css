@@ -1,33 +1,108 @@
-/* transform to grid attempt  */
-
-/* body {
-	display:grid;
-	font-family: 'Lato', sans-serif;
-	grid-template-rows:100px min-content min-content 1fr;
-	grid-template-columns: 1fr;
-	color:#777;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-.logo {
-	grid-row:1;
-} */
-
-
+/* Header */
 
 body, html {
 	height: 100%;
 	margin: 0;
 	font-family: 'Lato';
 	color: #777;
+}
+
+header {
+}
+
+.logo {
+	text-align:center;
 } 
 
+nav li {
+	font-size:1em;
+	list-style:none;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+a:link {
+	border-top:solid 0.1em;
+    color: #777;
+    font-size:3em;
+    text-decoration:none;
+}
+
+a:visited {
+    color: #777;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+
+/* Content */
+
+.about h1 {
+	text-align:center;
+	text-transform:uppercase;
+} 
+
+.about {
+	padding:2em;
+}
+
+.half {
+}
+
+.choices h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.choices {
+}
+
+.third {
+	padding:2em;
+}
+
+.third img {
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.aboutagain h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.aboutagain {
+	padding:2em;
+}
+
+.contact h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.contact {
+}
+
+.half h4 {
+	text-align:center;
+}
+
+.contact .half ul li {
+	list-style:none;
+	text-align:center;
+	
+}
+
+/* Media Queries */
+
+@media (min-width:1423px) {
 /* Header */
 
 header {
@@ -42,17 +117,19 @@ header {
 .logo {
 	float:left;
 	width:50%;
+	clear:both;
 }
 
 .logo img {
-	padding:2em 0 2em 8em;
+
+	padding:2em 0 2em 1em;
 	width:10em;
 }
 
 nav {
 	float:left;
 	text-transform:uppercase;
-	width:30%;
+	width:50%;
 }
 
 nav a:hover {
@@ -78,7 +155,9 @@ nav ul {
 
 a:link {
     color: #777;
+    font-size:1em;
     text-decoration:none;
+    border-top:none;
 }
 
 a:visited {
@@ -97,7 +176,6 @@ a:active {
 
 .bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5 {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,16 +217,15 @@ a:active {
 }
 
 .about {
-	padding:1em 4em 1em 4em;
-	height:350px;
+	height:320px;
 	width:100%;
 	
 }
 
 .half {
 	float:left;
-	padding:1em 4em 1em 4em;
-	width:40%;
+	padding:0 2em 0 2em;
+	width:45%;
 }
 
 .choices h1 {
@@ -157,14 +234,13 @@ a:active {
 }
 
 .choices {
-	height:380px;
+	height:410px;
 	padding:1em 4em 1em 4em;
 }
 
 .third {
 	float:left;
-	padding:1em 4em 4em 4em;
-	width:25%;
+	width:28%;
 }
 
 .third img {
@@ -206,5 +282,4 @@ a:active {
 footer {
 	text-align:center;
 }
-
-
+}
